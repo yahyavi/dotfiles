@@ -37,8 +37,8 @@ brew install wget --with-iri
 # Install RingoJS and Narwhal.
 # Note that the order in which these are installed is important;
 # see http://git.io/brew-narwhal-ringo.
-brew install ringojs
-brew install narwhal
+# brew install ringojs
+# brew install narwhal
 
 # Install more recent versions of some macOS tools.
 brew install vim --with-override-system-vi
@@ -144,4 +144,5 @@ brew cask install veracrypt
 brew cask install visual-studio-code
 brew cask install vlc
 brew cask install vox
+brew cask install tunnelblick
 

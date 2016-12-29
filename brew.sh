@@ -145,4 +145,4 @@ brew cask install visual-studio-code
 brew cask install vlc
 brew cask install vox
 brew cask install tunnelblick
-
+brew cask install insomniax

@@ -41,7 +41,7 @@ set modelines=4
 set exrc
 set secure
 " Enable line numbers
-set number
+" set number
 " Enable syntax highlighting
 syntax on
 " Highlight current line
@@ -61,7 +61,8 @@ set incsearch
 set laststatus=2
 " Enable mouse in all modes
 " set mouse=v if want to copy without shift. also mah want to disable numbers
-set mouse=a
+" set mouse=a
+set mouse=v
 " Disable error bells
 set noerrorbells
 " Don’t reset cursor to start of line when moving around.
@@ -77,10 +78,10 @@ set title
 " Show the (partial) command as it’s being typed
 set showcmd
 " Use relative line numbers
-if exists("&relativenumber")
-	set relativenumber
-	au BufReadPost * set relativenumber
-endif
+" if exists("&relativenumber")
+" 	set relativenumber
+"	au BufReadPost * set relativenumber
+" endif
 " Start scrolling three lines before the horizontal window border
 set scrolloff=3
 

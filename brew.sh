@@ -102,6 +102,7 @@ brew install webkit2png
 brew install zopfli
 brew install sshfs
 brew install byobu
+brew install htop
 
 
 # Remove outdated versions from the cellar.
@@ -146,3 +147,4 @@ brew cask install vlc
 brew cask install vox
 brew cask install tunnelblick
 brew cask install insomniax
+brew cask install switchresx

@@ -2,6 +2,16 @@
 
 cd "$(dirname "${BASH_SOURCE}")";
 
+git config --global user.name "Amir Yahyavi" && \
+git config --global user.email "yahyavi@gmail.com" && \
+git config --global github.user yahyavi && \
+git config --global core.editor "subl -w" && \
+git config --global color.ui true && \
+git config --global push.default simple
+
+git clone git@github.com:powerline/fonts.git init
+./init/fonts/install.sh
+
 git pull origin master;
 
 function doIt() {

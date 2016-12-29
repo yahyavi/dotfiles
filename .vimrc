@@ -6,7 +6,7 @@ colorscheme solarized
 " Make Vim more useful
 set nocompatible
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
-" set clipboard=unnamed
+set clipboard=unnamed
 " Enhance command-line completion
 set wildmenu
 " Allow cursor keys in insert mode
@@ -49,7 +49,7 @@ set cursorline
 " Make tabs as wide as two spaces
 set tabstop=2
 " Show “invisible” characters
-set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+" set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set list
 " Highlight searches
 set hlsearch
@@ -60,6 +60,7 @@ set incsearch
 " Always show status line
 set laststatus=2
 " Enable mouse in all modes
+" set mouse=v if want to copy without shift. also mah want to disable numbers
 set mouse=a
 " Disable error bells
 set noerrorbells

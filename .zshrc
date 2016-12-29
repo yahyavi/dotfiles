@@ -19,5 +19,6 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(brew cake colorize coffee web-search encode64 gem git osx rails rvm sublime ruby github node npm zsh-syntax-highlighting vagrant colored-man ssh-agent)
 
 source $ZSH/oh-my-zsh.sh
+ssh-add
 
 export PATH=/opt/vagrant/bin:/Applications/Postgres.app/Contents/MacOS/bin:$HOME/.rvm/bin:/$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin:/usr/X11/bin:$PATH

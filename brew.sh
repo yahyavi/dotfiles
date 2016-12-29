@@ -54,30 +54,30 @@ brew install sfnt2woff-zopfli
 brew install woff2
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
-brew install aircrack-ng
-brew install bfg
-brew install binutils
-brew install binwalk
-brew install cifer
-brew install dex2jar
-brew install dns2tcp
-brew install fcrackzip
-brew install foremost
-brew install hashpump
-brew install hydra
-brew install john
-brew install knock
-brew install netpbm
-brew install nmap
-brew install pngcheck
-brew install socat
-brew install sqlmap
-brew install tcpflow
-brew install tcpreplay
-brew install tcptrace
-brew install ucspi-tcp # `tcpserver` etc.
-brew install xpdf
-brew install xz
+# brew install aircrack-ng
+# brew install bfg
+# brew install binutils
+# brew install binwalk
+# brew install cifer
+# brew install dex2jar
+# brew install dns2tcp
+# brew install fcrackzip
+# brew install foremost
+# brew install hashpump
+# brew install hydra
+# brew install john
+# brew install knock
+# brew install netpbm
+# brew install nmap
+# brew install pngcheck
+# brew install socat
+# brew install sqlmap
+# brew install tcpflow
+# brew install tcpreplay
+# brew install tcptrace
+# brew install ucspi-tcp # `tcpserver` etc.
+# brew install xpdf
+# brew install xz
 
 # Install other useful binaries.
 brew install ack
@@ -86,7 +86,7 @@ brew install dark-mode
 brew install git
 brew install git-lfs
 brew install imagemagick --with-webp
-brew install lua
+# brew install lua
 brew install lynx
 brew install p7zip
 brew install pigz
@@ -103,3 +103,38 @@ brew install zopfli
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+######################################
+# BREW Cask
+brew tap caskroom/cask
+
+brew cask install alfred
+brew cask install appcleaner
+brew cask install bettertouchtool
+brew cask install cakebrew
+brew cask install cheatsheet
+brew cask install cyberduck
+brew cask install dash
+brew cask install divvy
+brew cask install dropbox
+brew cask install firefox
+brew cask install flux
+brew cask install gfxcardstatus
+brew cask install google-chrome
+brew cask install google-drive
+brew cask install handbrake
+brew cask install istat-menus
+brew cask install iterm2
+brew cask install karabiner
+brew cask install keka
+brew cask install numi
+brew cask install osxfuse
+brew cask install qbittorrent
+brew cask install slack
+brew cask install spectacle
+brew cask install sublime-text
+brew cask install the-unarchiver
+brew cask install veracrypt
+brew cask install visual-studio-code
+brew cask install vlc
+brew cask install vox

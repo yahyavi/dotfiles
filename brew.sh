@@ -100,6 +100,9 @@ brew install tree
 brew install vbindiff
 brew install webkit2png
 brew install zopfli
+brew install sshfs
+brew install byobu
+
 
 # Remove outdated versions from the cellar.
 brew cleanup
@@ -109,7 +112,6 @@ brew cleanup
 brew tap caskroom/cask
 brew update
 brew cask update
-
 
 brew cask install alfred
 brew cask install appcleaner
@@ -136,8 +138,10 @@ brew cask install qbittorrent
 brew cask install slack
 brew cask install spectacle
 brew cask install sublime-text
+brew cask install tagger
 brew cask install the-unarchiver
 brew cask install veracrypt
 brew cask install visual-studio-code
 brew cask install vlc
 brew cask install vox
+

@@ -35,3 +35,9 @@ else
 	fi;
 fi;
 unset doIt;
+
+
+curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+
+git clone git://github.com/zsh-users/zsh-syntax-highlighting.git \
+~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting

@@ -107,6 +107,9 @@ brew cleanup
 ######################################
 # BREW Cask
 brew tap caskroom/cask
+brew update
+brew cask update
+
 
 brew cask install alfred
 brew cask install appcleaner

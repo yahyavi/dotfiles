@@ -137,6 +137,7 @@ brew cask install istat-menus
 brew cask install iterm2
 brew cask install karabiner
 brew cask install keka
+brew cask install mactex
 brew cask install numi
 brew cask install onyx
 brew cask install osxfuse
@@ -149,10 +150,14 @@ brew cask install spectacle
 brew cask install sublime-text
 brew cask install switchresx
 brew cask install tagger
+# brew cask install texstudio
 brew cask install the-unarchiver
 brew cask install tunnelblick
 brew cask install veracrypt
 brew cask install visual-studio-code
 brew cask install vlc
 brew cask install vox
+
+brew cask cleanup
+
 

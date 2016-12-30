@@ -103,6 +103,7 @@ brew install zopfli
 brew install sshfs
 brew install byobu
 brew install htop
+brew install keychain
 
 
 # Remove outdated versions from the cellar.

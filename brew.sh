@@ -137,6 +137,7 @@ brew cask install iterm2
 brew cask install karabiner
 brew cask install keka
 brew cask install numi
+brew cask install onyx
 brew cask install osxfuse
 brew cask install path-finder
 brew cask install pgadmin4
@@ -153,3 +154,4 @@ brew cask install veracrypt
 brew cask install visual-studio-code
 brew cask install vlc
 brew cask install vox
+

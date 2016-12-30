@@ -21,5 +21,13 @@ plugins=(brew cake colorize coffee web-search encode64 gem git osx rails rvm sub
 source $ZSH/oh-my-zsh.sh
 
 export EDITOR=subl
+# Get readable list of network IPs
+alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
+alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias flush="dscacheutil -flushcache" # Flush DNS cache
+
+alias gzip="gzip -9n" # set strongest compression level as ‘default’ for gzip
+alias ping="ping -c 5" # ping 5 times ‘by default’
+alias ql="qlmanage -p 2>/dev/null" # preview a file using QuickLook
 
 export PATH=/opt/vagrant/bin:/Applications/Postgres.app/Contents/MacOS/bin:$HOME/.rvm/bin:/$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin:/usr/X11/bin:$PATH

@@ -150,13 +150,15 @@ brew cask install spectacle
 brew cask install sublime-text
 brew cask install switchresx
 brew cask install tagger
-# brew cask install texstudio
+brew cask install teamviewer
+brew cask install texstudio
 brew cask install the-unarchiver
 brew cask install tunnelblick
 brew cask install veracrypt
 brew cask install visual-studio-code
 brew cask install vlc
 brew cask install vox
+brew cask install xee
 
 brew cask cleanup
 

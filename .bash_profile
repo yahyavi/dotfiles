@@ -42,7 +42,7 @@ fi;
 
 # add keychain
 if type keychain >/dev/null 2>/dev/null; then
-  keychain --nogui -q /Users/amir/.ssh/id_rsa
+  keychain --nogui -q ~/.ssh/id_rsa
   [ -f ~/.keychain/${HOSTNAME}-sh ] && . ~/.keychain/${HOSTNAME}-sh
   [ -f ~/.keychain/${HOSTNAME}-sh-gpg ] && . ~/.keychain/${HOSTNAME}-sh-gpg
 fi

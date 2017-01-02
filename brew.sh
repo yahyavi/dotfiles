@@ -116,18 +116,23 @@ brew update
 brew cask update
 
 brew cask install alfred
+brew cask install android-file-transfer
 brew cask install appcleaner
+brew cask install bartender
 brew cask install bettertouchtool
 brew cask install cakebrew
+brew cask install ccleaner
 brew cask install cheatsheet
 brew cask install cyberduck
 brew cask install dash
+brew cask install day-o
 brew cask install disablemonitor
 brew cask install divvy
 brew cask install dropbox
 brew cask install firefox
 brew cask install flux
 brew cask install gfxcardstatus
+brew cask install gimp
 brew cask install gitup
 brew cask install google-chrome
 brew cask install google-drive
@@ -145,6 +150,7 @@ brew cask install path-finder
 brew cask install pgadmin4
 brew cask install qbittorrent
 brew cask install rcdefaultapp
+brew cask install skype
 brew cask install slack
 brew cask install spectacle
 brew cask install sublime-text

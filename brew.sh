@@ -123,6 +123,7 @@ brew cask install bettertouchtool
 brew cask install cakebrew
 brew cask install ccleaner
 brew cask install cheatsheet
+brew cask install clipmenu
 brew cask install cyberduck
 brew cask install dash
 brew cask install day-o
@@ -166,6 +167,7 @@ brew cask install vlc
 brew cask install vox
 brew cask install xee
 brew cask install xquartz
+
 
 brew cask cleanup
 

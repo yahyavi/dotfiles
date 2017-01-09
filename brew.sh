@@ -115,6 +115,7 @@ brew tap caskroom/cask
 brew update
 brew cask update
 
+brew cask install airflow
 brew cask install alfred
 brew cask install android-file-transfer
 brew cask install appcleaner
@@ -123,7 +124,6 @@ brew cask install bettertouchtool
 brew cask install cakebrew
 brew cask install ccleaner
 brew cask install cheatsheet
-brew cask install clipmenu
 brew cask install cyberduck
 brew cask install dash
 brew cask install day-o
@@ -146,6 +146,7 @@ brew cask install karabiner
 brew cask install keepassx
 brew cask install keka
 brew cask install mactex
+brew cask install musicbrainz-picard
 brew cask install numi
 brew cask install onyx
 brew cask install osxfuse
@@ -156,6 +157,7 @@ brew cask install rcdefaultapp
 brew cask install skype
 brew cask install slack
 brew cask install sublime-text
+brew cask install subtitles
 brew cask install tagger
 brew cask install teamviewer
 brew cask install texstudio
@@ -167,7 +169,6 @@ brew cask install vlc
 brew cask install vox
 brew cask install xee
 brew cask install xquartz
-
 
 brew cask cleanup
 

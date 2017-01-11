@@ -145,6 +145,7 @@ brew cask install iterm2
 brew cask install karabiner
 brew cask install keepassx
 brew cask install keka
+brew cask install macdown
 brew cask install mactex
 brew cask install musicbrainz-picard
 brew cask install numi

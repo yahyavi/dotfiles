@@ -1,6 +1,7 @@
 ZSH=$HOME/.oh-my-zsh
 # ZSH_THEME="kphoen"
-ZSH_THEME="agnoster"
+# ZSH_THEME="agnoster"
+ZSH_THEME="amfractal"
 
 
 export LESS_TERMCAP_mb=$'\E[01;31m'       # begin blinking
@@ -16,7 +17,7 @@ alias ohmyzsh="subl ~/.oh-my-zsh"
 
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(brew cake colorize coffee web-search encode64 gem git osx rails rvm sublime ruby github node npm zsh-syntax-highlighting vagrant colored-man ssh-agent)
+plugins=(brew cake colorize coffee web-search encode64 gem git osx rails rvm sublime ruby github node npm vagrant colored-man ssh-agent zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -30,4 +31,5 @@ alias gzip="gzip -9n" # set strongest compression level as ‘default’ for gzi
 alias ping="ping -c 5" # ping 5 times ‘by default’
 alias ql="qlmanage -p 2>/dev/null" # preview a file using QuickLook
 
-export PATH=/opt/vagrant/bin:/Applications/Postgres.app/Contents/MacOS/bin:$HOME/.rvm/bin:/$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin:/usr/X11/bin:$PATH
+export PATH=/opt/vagrant/bin:/Applications/Postgres.app/Contents/MacOS/bin:$HOME/.rvm/bin:/$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin:/usr/X11/bin:/Users/amir/miniconda2/bin:$PATH
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

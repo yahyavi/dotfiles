@@ -17,7 +17,7 @@ alias ohmyzsh="subl ~/.oh-my-zsh"
 
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(brew cake colorize coffee web-search encode64 gem git osx rails rvm sublime ruby github node npm vagrant colored-man ssh-agent zsh-syntax-highlighting)
+plugins=(brew cake colorize coffee web-search encode64 gem git osx rvm sublime github node npm vagrant colored-man ssh-agent sbt pip rsync scala docker zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -32,4 +32,6 @@ alias ping="ping -c 5" # ping 5 times ‘by default’
 alias ql="qlmanage -p 2>/dev/null" # preview a file using QuickLook
 
 export PATH=/opt/vagrant/bin:/Applications/Postgres.app/Contents/MacOS/bin:$HOME/.rvm/bin:/$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin:/usr/X11/bin:/Users/amir/miniconda2/bin:$PATH
+export SPARK_HOME=/Users/amir/Z/Work/2014-XSeer/Code/Misc/spark-2.2.0-bin-hadoop2.7
+
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

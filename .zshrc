@@ -17,7 +17,7 @@ alias ohmyzsh="subl ~/.oh-my-zsh"
 
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(brew cake colorize coffee web-search encode64 gem git osx rvm sublime github node npm vagrant colored-man ssh-agent sbt python postgres pip rsync scala docker zsh-syntax-highlighting)
+plugins=(brew cake colorize coffee web-search encode64 gem git osx rvm sublime github node npm vagrant colored-man ssh-agent sbt python postgres pip rsync scala docker)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -35,3 +35,4 @@ export PATH=/opt/vagrant/bin:/Applications/Postgres.app/Contents/MacOS/bin:$HOME
 export SPARK_HOME=/Users/amir/Z/Work/2014-XSeer/Code/Misc/spark-2.2.0-bin-hadoop2.7
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

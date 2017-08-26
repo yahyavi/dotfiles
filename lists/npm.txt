@@ -1,0 +1,6 @@
+/usr/local/lib
+/usr/local/lib/node_modules/bower
+/usr/local/lib/node_modules/coffee-script
+/usr/local/lib/node_modules/npm
+/usr/local/lib/node_modules/tldr
+/usr/local/lib/node_modules/vtop

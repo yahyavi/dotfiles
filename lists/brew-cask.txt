@@ -84,6 +84,7 @@ teamviewer
 texstudio
 the-unarchiver
 transmission
+tripmode
 tunnelblick
 veracrypt
 visual-studio-code

@@ -3,6 +3,7 @@ aerial
 airflow
 alfred
 android-file-transfer
+anki
 appcleaner
 bartender
 bettertouchtool

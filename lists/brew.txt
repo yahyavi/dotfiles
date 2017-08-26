@@ -22,6 +22,7 @@ diff-so-fancy
 dirmngr
 dns2tcp
 doxygen
+emacs-plus
 fcrackzip
 ffmpeg
 findutils
@@ -59,6 +60,8 @@ httpie
 hydra
 icu4c
 imagemagick
+imagemagick@6
+imgcat
 isl
 jasper
 john
@@ -131,6 +134,7 @@ readline
 rename
 rhino
 ringojs
+ripgrep
 s-lang
 sbt
 scala
@@ -152,6 +156,7 @@ tcpflow
 tcpreplay
 tcptrace
 testssl
+texinfo
 thefuck
 tmux
 tree

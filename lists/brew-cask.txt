@@ -5,7 +5,6 @@ alfred
 android-file-transfer
 appcleaner
 bartender
-beardedspice
 bettertouchtool
 betterzip
 boostnote

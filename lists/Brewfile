@@ -1,35 +1,35 @@
-tap "beeftornado/rmtree"
-tap "bramstein/webfonttools"
-tap "caskroom/cask"
-tap "caskroom/fonts"
-tap "d12frosted/emacs-plus"
 tap "eddieantonio/eddieantonio"
-tap "homebrew/bundle"
-tap "homebrew/completions"
-tap "homebrew/core"
 tap "homebrew/dupes"
 tap "homebrew/fuse"
-tap "homebrew/php"
+tap "homebrew/completions"
 tap "homebrew/science"
+tap "homebrew/core"
+tap "homebrew/php"
 tap "homebrew/versions"
+tap "homebrew/bundle"
+tap "d12frosted/emacs-plus"
+tap "caskroom/fonts"
+tap "caskroom/cask"
+tap "bramstein/webfonttools"
+tap "beeftornado/rmtree"
 cask "java"
 cask "osxfuse"
 cask "xquartz"
 brew "ack"
-brew "freetype"
-brew "fontconfig"
 brew "gettext"
 brew "libffi"
 brew "pcre"
 brew "pixman"
 brew "cairo"
 brew "git"
+brew "gobject-introspection"
 brew "openssl"
 brew "gdbm"
 brew "readline"
 brew "sqlite"
 brew "python"
-brew "gobject-introspection"
+brew "xz"
+brew "python3"
 brew "autoconf"
 brew "automake"
 brew "bash"
@@ -41,7 +41,6 @@ brew "mpfr"
 brew "libmpc"
 brew "p7zip"
 brew "ssdeep"
-brew "xz"
 brew "binwalk"
 brew "boost"
 brew "brew-cask-completion"
@@ -66,6 +65,7 @@ brew "libksba"
 brew "pth"
 brew "dirmngr"
 brew "dns2tcp"
+brew "dos2unix"
 brew "doxygen"
 brew "fcrackzip"
 brew "lame"
@@ -77,7 +77,6 @@ brew "flatbuffers"
 brew "foremost"
 brew "fribidi"
 brew "git-lfs"
-brew "python3"
 brew "gnumeric"
 brew "libusb"
 brew "pinentry"
@@ -125,6 +124,7 @@ brew "ripgrep"
 brew "sbt"
 brew "scala"
 brew "screen"
+brew "sfk"
 brew "snzip"
 brew "socat"
 brew "speedtest-cli"
@@ -171,6 +171,7 @@ cask "cheatsheet"
 cask "chronosync"
 cask "cloudmounter"
 cask "commander-one"
+cask "contexts"
 cask "cyberduck"
 cask "dash"
 cask "disablemonitor"
@@ -254,6 +255,7 @@ mas "Binaural", id: 946812450
 mas "Blinky", id: 550873221
 mas "CHM Reader", id: 424182884
 mas "Compare & Sync Folders", id: 1001460601
+mas "Deliveries", id: 924726344
 mas "Display Menu", id: 549083868
 mas "DrCleaner", id: 921458519
 mas "DrUnarchiver", id: 1127253508
@@ -268,11 +270,11 @@ mas "Keynote", id: 409183694
 mas "Magnet", id: 441258766
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-mas "Parcel", id: 639968404
 mas "PopClip", id: 445189367
 mas "ScannerApp", id: 912659472
 mas "Serenity", id: 1185371817
 mas "SSH Tunnel", id: 734418810
+mas "Unsplash Wallpapers", id: 1284863847
 mas "Workspaces", id: 1219826448
 mas "Xcode", id: 497799835
 mas "Yummy FTP", id: 492068728

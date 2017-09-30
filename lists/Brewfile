@@ -168,12 +168,10 @@ cask "betterzip"
 cask "boostnote"
 cask "cakebrew"
 cask "caption"
-cask "ccleaner"
 cask "cheatsheet"
 cask "chronosync"
 cask "cloudmounter"
 cask "commander-one"
-cask "contexts"
 cask "cyberduck"
 cask "dash"
 cask "disablemonitor"
@@ -186,12 +184,10 @@ cask "etrecheck"
 cask "filezilla"
 cask "firefox"
 cask "fluor"
-cask "flux"
 cask "forklift"
 cask "gdal-framework"
 cask "gfxcardstatus"
 cask "gimp"
-cask "gitkraken"
 cask "gitup"
 cask "google-drive"
 cask "handbrake"
@@ -210,24 +206,18 @@ cask "knockknock"
 cask "lockdown"
 cask "macdown"
 cask "mactex"
-cask "malwarebytes-anti-malware"
-cask "micro-snitch"
 cask "mono-mdk"
 cask "mounty"
 cask "musicbrainz-picard"
 cask "numi"
 cask "onyx"
-cask "osirix-quicklook"
 cask "path-finder"
 cask "pdfexpert"
 cask "pgadmin4"
 cask "pixelstick"
 cask "private-internet-access"
-cask "psequel"
 cask "qbittorrent"
 cask "rcdefaultapp"
-cask "scala-ide"
-cask "secure-pipes"
 cask "sip"
 cask "skype"
 cask "slack"
@@ -248,7 +238,6 @@ cask "vlc"
 cask "vox"
 cask "wineskin-winery"
 cask "wireshark"
-cask "witch"
 cask "xee"
 mas "Alinof Timer", id: 512464723
 mas "Amphetamine", id: 937984704
@@ -256,8 +245,6 @@ mas "Battery Health", id: 490192174
 mas "Binaural", id: 946812450
 mas "Blinky", id: 550873221
 mas "CHM Reader", id: 424182884
-mas "Compare & Sync Folders", id: 1001460601
-mas "Deliveries", id: 924726344
 mas "Display Menu", id: 549083868
 mas "DrCleaner", id: 921458519
 mas "DrUnarchiver", id: 1127253508
@@ -265,7 +252,6 @@ mas "EasyFind", id: 411673888
 mas "GarageBand", id: 682658836
 mas "GIF Brewery 3", id: 1081413713
 mas "GIPHY CAPTURE", id: 668208984
-mas "HazeOver", id: 430798174
 mas "iMovie", id: 408981434
 mas "Jayson", id: 1189824719
 mas "Keynote", id: 409183694

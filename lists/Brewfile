@@ -18,16 +18,11 @@ cask "xquartz"
 brew "ack"
 brew "gettext"
 brew "libffi"
-brew "pcre"
 brew "pixman"
 brew "cairo"
 brew "git"
 brew "gobject-introspection"
-brew "openssl"
-brew "gdbm"
-brew "readline"
 brew "sqlite"
-brew "python"
 brew "xz"
 brew "python3"
 brew "autoconf"
@@ -44,7 +39,6 @@ brew "ssdeep"
 brew "binwalk"
 brew "boost"
 brew "brew-cask-completion"
-brew "brew-rmtree"
 brew "coreutils"
 brew "gnu-sed", args: ["with-default-names"]
 brew "libevent"
@@ -117,6 +111,7 @@ brew "pigz"
 brew "pngcheck"
 brew "pv"
 brew "pyenv"
+brew "python"
 brew "rename"
 brew "rhino"
 brew "ringojs"
@@ -124,7 +119,6 @@ brew "ripgrep"
 brew "sbt"
 brew "scala"
 brew "screen"
-brew "sfk"
 brew "snzip"
 brew "socat"
 brew "speedtest-cli"
@@ -138,7 +132,6 @@ brew "testssl"
 brew "thefuck"
 brew "tldr"
 brew "tree"
-brew "ucspi-tcp"
 brew "unixodbc"
 brew "unrar"
 brew "vbindiff"
@@ -179,7 +172,6 @@ cask "divvy"
 cask "docker"
 cask "docker-toolbox"
 cask "dropbox"
-cask "dropzone"
 cask "etrecheck"
 cask "filezilla"
 cask "firefox"
@@ -189,7 +181,7 @@ cask "gdal-framework"
 cask "gfxcardstatus"
 cask "gimp"
 cask "gitup"
-cask "google-drive"
+cask "google-backup-and-sync"
 cask "handbrake"
 cask "headset"
 cask "iina"
@@ -210,7 +202,6 @@ cask "mono-mdk"
 cask "mounty"
 cask "musicbrainz-picard"
 cask "numi"
-cask "onyx"
 cask "path-finder"
 cask "pdfexpert"
 cask "pgadmin4"
@@ -241,7 +232,6 @@ cask "wireshark"
 cask "xee"
 mas "Alinof Timer", id: 512464723
 mas "Amphetamine", id: 937984704
-mas "Battery Health", id: 490192174
 mas "Binaural", id: 946812450
 mas "Blinky", id: 550873221
 mas "CHM Reader", id: 424182884
@@ -253,11 +243,11 @@ mas "GarageBand", id: 682658836
 mas "GIF Brewery 3", id: 1081413713
 mas "GIPHY CAPTURE", id: 668208984
 mas "iMovie", id: 408981434
-mas "Jayson", id: 1189824719
 mas "Keynote", id: 409183694
 mas "Magnet", id: 441258766
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "Parcel", id: 639968404
 mas "PopClip", id: 445189367
 mas "ScannerApp", id: 912659472
 mas "Serenity", id: 1185371817

@@ -39,7 +39,7 @@ brew install zsh
 brew install zsh-completions
 
 # Switch to using brew-installed bash as default shell
-if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
+if ! fgrep -q '/usr/local/bin/zsh' /etc/shells; then
   echo '/usr/local/bin/zsh' | sudo tee -a /etc/shells;
   chsh -s /usr/local/bin/zsh;
 fi;

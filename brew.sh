@@ -31,6 +31,19 @@ if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
   chsh -s /usr/local/bin/bash;
 fi;
 
+
+# Install ZSH.
+# Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
+# running `chsh`.
+brew install zsh
+brew install zsh-completions
+
+# Switch to using brew-installed bash as default shell
+if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
+  echo '/usr/local/bin/zsh' | sudo tee -a /etc/shells;
+  chsh -s /usr/local/bin/zsh;
+fi;
+
 # Install `wget` with IRI support.
 brew install wget --with-iri
 
@@ -79,98 +92,98 @@ brew install woff2
 # brew install xpdf
 # brew install xz
 
-# Install other useful binaries.
-brew install ack
-brew install dark-mode
-#brew install exiv2
-brew install git
-brew install git-lfs
-brew install imagemagick --with-webp
-brew install lua
-brew install lynx
-brew install p7zip
-brew install pigz
-brew install pv
-brew install rename
-brew install rhino
-brew install speedtest_cli
-brew install ssh-copy-id
-brew install testssl
-brew install tree
-brew install vbindiff
-brew install webkit2png
-brew install zopfli
-brew install sshfs
-brew install byobu
-brew install htop
-brew install keychain
+# # Install other useful binaries.
+# brew install ack
+# brew install dark-mode
+# #brew install exiv2
+# brew install git
+# brew install git-lfs
+# brew install imagemagick --with-webp
+# brew install lua
+# brew install lynx
+# brew install p7zip
+# brew install pigz
+# brew install pv
+# brew install rename
+# brew install rhino
+# brew install speedtest_cli
+# brew install ssh-copy-id
+# brew install testssl
+# brew install tree
+# brew install vbindiff
+# brew install webkit2png
+# brew install zopfli
+# brew install sshfs
+# brew install byobu
+# brew install htop
+# brew install keychain
 
 
-# Remove outdated versions from the cellar.
-brew cleanup
+# # Remove outdated versions from the cellar.
+# brew cleanup
 
-######################################
-# BREW Cask
-brew tap caskroom/cask
-brew update
-brew cask update
+# ######################################
+# # BREW Cask
+# brew tap caskroom/cask
+# brew update
+# brew cask update
 
-brew cask install airflow
-brew cask install alfred
-brew cask install android-file-transfer
-brew cask install appcleaner
-brew cask install bartender
-brew cask install bettertouchtool
-brew cask install cakebrew
-brew cask install ccleaner
-brew cask install cheatsheet
-brew cask install cyberduck
-brew cask install dash
-brew cask install day-o
-brew cask install disablemonitor
-brew cask install divvy
-brew cask install dropbox
-brew cask install firefox
-brew cask install flux
-brew cask install gfxcardstatus
-brew cask install gimp
-brew cask install gitup
-brew cask install google-chrome
-brew cask install google-drive
-brew cask install handbrake
-brew cask install inkscape
-brew cask install insomniax
-brew cask install istat-menus
-brew cask install iterm2
-brew cask install karabiner
-brew cask install keepassx
-brew cask install keka
-brew cask install macdown
-brew cask install mactex
-brew cask install musicbrainz-picard
-brew cask install numi
-brew cask install onyx
-brew cask install osxfuse
-brew cask install path-finder
-brew cask install pgadmin4
-brew cask install qbittorrent
-brew cask install rcdefaultapp
-brew cask install skype
-brew cask install slack
-brew cask install sublime-text
-brew cask install subtitles
-brew cask install tagger
-brew cask install teamviewer
-brew cask install texstudio
-brew cask install the-unarchiver
-brew cask install tunnelblick
-brew cask install veracrypt
-brew cask install visual-studio-code
-brew cask install vlc
-brew cask install vox
-brew cask install xee
-brew cask install xquartz
+# brew cask install airflow
+# brew cask install alfred
+# brew cask install android-file-transfer
+# brew cask install appcleaner
+# brew cask install bartender
+# brew cask install bettertouchtool
+# brew cask install cakebrew
+# brew cask install ccleaner
+# brew cask install cheatsheet
+# brew cask install cyberduck
+# brew cask install dash
+# brew cask install day-o
+# brew cask install disablemonitor
+# brew cask install divvy
+# brew cask install dropbox
+# brew cask install firefox
+# brew cask install flux
+# brew cask install gfxcardstatus
+# brew cask install gimp
+# brew cask install gitup
+# brew cask install google-chrome
+# brew cask install google-drive
+# brew cask install handbrake
+# brew cask install inkscape
+# brew cask install insomniax
+# brew cask install istat-menus
+# brew cask install iterm2
+# brew cask install karabiner
+# brew cask install keepassx
+# brew cask install keka
+# brew cask install macdown
+# brew cask install mactex
+# brew cask install musicbrainz-picard
+# brew cask install numi
+# brew cask install onyx
+# brew cask install osxfuse
+# brew cask install path-finder
+# brew cask install pgadmin4
+# brew cask install qbittorrent
+# brew cask install rcdefaultapp
+# brew cask install skype
+# brew cask install slack
+# brew cask install sublime-text
+# brew cask install subtitles
+# brew cask install tagger
+# brew cask install teamviewer
+# brew cask install texstudio
+# brew cask install the-unarchiver
+# brew cask install tunnelblick
+# brew cask install veracrypt
+# brew cask install visual-studio-code
+# brew cask install vlc
+# brew cask install vox
+# brew cask install xee
+# brew cask install xquartz
 
-brew cask cleanup
+# brew cask cleanup
 
 

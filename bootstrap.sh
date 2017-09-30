@@ -42,4 +42,4 @@ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | 
 git clone git://github.com/zsh-users/zsh-syntax-highlighting.git \
 ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
-cp ./init/agnoster.zsh-theme ~/.oh-my-zsh/themes/agnoster.zsh-theme
+cp ./init/amfractal.zsh-theme ~/.oh-my-zsh/themes/amfractal.zsh-theme

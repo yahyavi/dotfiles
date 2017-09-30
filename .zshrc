@@ -33,7 +33,7 @@ alias ql="qlmanage -p 2>/dev/null" # preview a file using QuickLook
 eval "$(thefuck --alias)" # adding the fuck for fixing errors in commandline
 
 fpath=(/usr/local/share/zsh-completions $fpath)
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
 # export SPARK_HOME=/Users/amir/Z/Work/2014-XSeer/Code/Misc/spark-2.2.0-bin-hadoop2.7
 
 # test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

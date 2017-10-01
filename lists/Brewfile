@@ -9,6 +9,7 @@ tap "homebrew/versions"
 tap "homebrew/bundle"
 tap "d12frosted/emacs-plus"
 tap "caskroom/fonts"
+tap "caskroom/versions"
 tap "caskroom/cask"
 tap "bramstein/webfonttools"
 tap "beeftornado/rmtree"
@@ -182,11 +183,13 @@ cask "gfxcardstatus"
 cask "gimp"
 cask "gitup"
 cask "google-backup-and-sync"
+cask "google-chrome"
 cask "handbrake"
 cask "headset"
 cask "iina"
 cask "imageoptim"
 cask "inkscape"
+cask "intellij-idea"
 cask "istat-menus"
 cask "iterm2"
 cask "itsycal"
@@ -195,6 +198,7 @@ cask "kdiff3"
 cask "keepassx"
 cask "keka"
 cask "knockknock"
+cask "little-snitch"
 cask "lockdown"
 cask "macdown"
 cask "mactex"
@@ -227,6 +231,7 @@ cask "veracrypt"
 cask "visual-studio-code"
 cask "vlc"
 cask "vox"
+cask "windscribe"
 cask "wineskin-winery"
 cask "wireshark"
 cask "xee"
@@ -235,6 +240,7 @@ mas "Amphetamine", id: 937984704
 mas "Binaural", id: 946812450
 mas "Blinky", id: 550873221
 mas "CHM Reader", id: 424182884
+mas "Deliveries", id: 924726344
 mas "Display Menu", id: 549083868
 mas "DrCleaner", id: 921458519
 mas "DrUnarchiver", id: 1127253508
@@ -247,7 +253,6 @@ mas "Keynote", id: 409183694
 mas "Magnet", id: 441258766
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-mas "Parcel", id: 639968404
 mas "PopClip", id: 445189367
 mas "ScannerApp", id: 912659472
 mas "Serenity", id: 1185371817

@@ -9,8 +9,8 @@ git config --global core.editor "subl -w" && \
 git config --global color.ui true && \
 git config --global push.default simple
 
-git clone git@github.com:powerline/fonts.git init
-./init/fonts/install.sh
+git clone https://github.com/powerline/fonts.git fonts
+./fonts/install.sh
 
 git pull origin master;
 
@@ -42,4 +42,6 @@ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | 
 git clone git://github.com/zsh-users/zsh-syntax-highlighting.git \
 ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
-cp Utils/dotfiles/init/agnoster.zsh-theme ~/.oh-my-zsh/themes/agnoster.zsh-theme
+cp ./init/agnoster.zsh-theme ~/.oh-my-zsh/themes/agnoster.zsh-theme
+cp ./init/amfractal.zsh-theme ~/.oh-my-zsh/themes/amfractal.zsh-theme
+

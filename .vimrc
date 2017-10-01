@@ -3,6 +3,15 @@ set background=dark
 colorscheme solarized
 " let g:solarized_termtrans=1
 
+let g:solarized_termcolors= 16
+let g:solarized_termtrans = 16
+
+let g:solarized_bold = 1
+let g:solarized_underline = 1 
+let g:solarized_italic = 1
+let g:solarized_contrast = "high"
+let g:solarized_visibility= "high"
+
 " Make Vim more useful
 set nocompatible
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)

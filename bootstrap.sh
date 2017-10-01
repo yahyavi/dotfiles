@@ -9,7 +9,7 @@ git config --global core.editor "subl -w" && \
 git config --global color.ui true && \
 git config --global push.default simple
 
-git clone git@github.com:powerline/fonts.git fonts
+git clone https://github.com/powerline/fonts.git fonts
 ./fonts/install.sh
 
 git pull origin master;

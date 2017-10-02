@@ -1,7 +1,7 @@
 " Use the Solarized Dark theme
 set background=dark
 " colorscheme solarized
-colorscheme Tomorrow-Night-Bright
+colorscheme Tomorrow-Night
 " let g:solarized_termtrans=1
 
 let g:solarized_termcolors= 16

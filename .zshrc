@@ -1,28 +1,77 @@
-ZSH=$HOME/.oh-my-zsh
-# ZSH_THEME="kphoen"
-# ZSH_THEME="agnoster"
-ZSH_THEME="amfractal"
+source /usr/local/share/antigen/antigen.zsh
+
+# Load the oh-my-zsh's library.
+antigen use oh-my-zsh
 
 
-export LESS_TERMCAP_mb=$'\E[01;31m'       # begin blinking
-export LESS_TERMCAP_md=$'\E[01;38;5;74m'  # begin bold
-export LESS_TERMCAP_me=$'\E[0m'           # end mode
-export LESS_TERMCAP_se=$'\E[0m'           # end standout-mode
-export LESS_TERMCAP_so=$'\E[38;5;246m'    # begin standout-mode - info box
-export LESS_TERMCAP_ue=$'\E[0m'           # end underline
-export LESS_TERMCAP_us=$'\E[04;38;5;146m' # begin underline
+# ########## THEME
 
-alias zshconfig="subl ~/.zshrc"
-alias ohmyzsh="subl ~/.oh-my-zsh"
 
-COMPLETION_WAITING_DOTS="true"
+# Bundles from the default repo (robbyrussell's oh-my-zsh).
+# Tools
+antigen bundle web-search
+antigen bundle encode64
+antigen bundle colorize
+antigen bundle rsync
+antigen bundle sublime
+antigen bundle rupa/z
+antigen bundle colored-man
 
-plugins=(brew cake colorize coffee web-search encode64 gem git osx rvm sublime github node npm vagrant colored-man ssh-agent sbt python postgres pip rsync scala docker)
+# System
+antigen bundle command-not-found
+antigen bundle brew
+antigen bundle osx
+antigen bundle ssh-agent
+antigen bundle heroku
+antigen bundle unixorn/autoupdate-antigen.zshplugin
 
-source $ZSH/oh-my-zsh.sh
+# Programming
+# git
+antigen bundle git
+antigen bundle git-extra
+antigen bundle github
 
-export EDITOR=subl
-# Get readable list of network IPs
+# python
+antigen bundle pip
+antigen bundle python
+
+# ruby
+antigen bundle gem
+antigen bundle rvm
+
+# node
+antigen bundle cake
+antigen bundle node
+antigen bundle npm
+antigen bundle coffee
+
+# scala
+antigen bundle scala
+antigen bundle sbt
+
+# misc
+antigen bundle vagrant
+antigen bundle postgres
+antigen bundle docker
+
+
+# Syntax highlighting bundle.
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-history-substring-search
+antigen bundle zsh-users/zsh-syntax-highlighting
+# antigen bundle zdharma/fast-syntax-highlighting
+
+# Load the theme.
+antigen theme agnoster
+# antigen theme bhilburn/powerlevel9k powerlevel9k
+
+# Tell Antigen that you're done.
+antigen apply
+
+# functions
+source ~/.functions
+
+# Aliases
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias flush="dscacheutil -flushcache" # Flush DNS cache
@@ -30,11 +79,9 @@ alias flush="dscacheutil -flushcache" # Flush DNS cache
 alias gzip="gzip -9n" # set strongest compression level as ‘default’ for gzip
 alias ping="ping -c 5" # ping 5 times ‘by default’
 alias ql="qlmanage -p 2>/dev/null" # preview a file using QuickLook
-eval "$(thefuck --alias)" # adding the fuck for fixing errors in commandline
 
-fpath=(/usr/local/share/zsh-completions $fpath)
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
+export EDITOR=subl
+# export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
 # export SPARK_HOME=/Users/amir/Z/Work/2014-XSeer/Code/Misc/spark-2.2.0-bin-hadoop2.7
-
 # test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+eval $(thefuck --alias)

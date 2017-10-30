@@ -5,7 +5,7 @@ POWERLEVEL9K_INSTALLATION_PATH=".antigen/bundles/bhilburn/powerlevel9k"
 
 POWERLEVEL9K_MODE="awesome-patched"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status os_icon context dir dir_writable)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vcs root_indicator background_jobs history command_execution_time)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vcs root_indicator background_jobs command_execution_time history)
 POWERLEVEL9K_ALWAYS_SHOW_CONTEXT=true
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=1

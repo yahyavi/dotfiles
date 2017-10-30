@@ -62,7 +62,8 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Load the theme.
 # ########## THEME
-antigen theme agnoster
+# antigen theme agnoster
+antigen theme yahyavi/dotfiles themes/amfractal
 # antigen theme bhilburn/powerlevel9k powerlevel9k
 
 # Tell Antigen that you're done.
@@ -101,6 +102,24 @@ setopt hist_reduce_blanks       # Remove superfluous blanks.
 setopt hist_save_no_dups        # Omit older commands in favor of newer ones.
 
 setopt extended_glob
+
+
+# =============================================================================
+#                                Key Bindings
+# =============================================================================
+
+# Common CTRL bindings.
+# bindkey "^a" beginning-of-line
+# bindkey "^e" end-of-line
+# bindkey "^f" forward-word
+# bindkey "^b" backward-word
+# bindkey "^k" kill-line
+# bindkey "^d" delete-char
+# bindkey "^y" accept-and-hold
+# bindkey "^w" backward-kill-word
+# bindkey "^u" backward-kill-line
+# bindkey "^R" history-incremental-pattern-search-backward
+# bindkey "^F" history-incremental-pattern-search-forward
 
 #####################################################################
 

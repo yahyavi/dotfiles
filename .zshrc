@@ -1,8 +1,19 @@
 source /usr/local/share/antigen/antigen.zsh
 
+###################################
+POWERLEVEL9K_INSTALLATION_PATH=".antigen/bundles/bhilburn/powerlevel9k"
+
+POWERLEVEL9K_MODE="awesome-patched"
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status os_icon context dir dir_writable)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vcs root_indicator background_jobs history command_execution_time)
+POWERLEVEL9K_ALWAYS_SHOW_CONTEXT=true
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=1
+POWERLEVEL9K_COMMAND_EXECUTION_TIME_PRECISION=3
+###################################
+
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
-
 
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 # Tools
@@ -63,8 +74,8 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 # Load the theme.
 # ########## THEME
 # antigen theme agnoster
-antigen theme yahyavi/dotfiles themes/amfractal
-# antigen theme bhilburn/powerlevel9k powerlevel9k
+# antigen theme yahyavi/dotfiles themes/amfractal
+antigen theme bhilburn/powerlevel9k powerlevel9k
 
 # Tell Antigen that you're done.
 antigen apply
@@ -142,4 +153,3 @@ export EDITOR=subl
 # export SPARK_HOME=/Users/amir/Z/Work/2014-XSeer/Code/Misc/spark-2.2.0-bin-hadoop2.7
 # test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 eval $(thefuck --alias)
-

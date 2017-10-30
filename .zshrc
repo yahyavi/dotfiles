@@ -4,9 +4,6 @@ source /usr/local/share/antigen/antigen.zsh
 antigen use oh-my-zsh
 
 
-# ########## THEME
-
-
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 # Tools
 antigen bundle web-search
@@ -53,20 +50,61 @@ antigen bundle sbt
 antigen bundle vagrant
 antigen bundle postgres
 antigen bundle docker
-
+antigen bundle sudo
+antigen bundle tmux
 
 # Syntax highlighting bundle.
+antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle zsh-users/zsh-syntax-highlighting
 # antigen bundle zdharma/fast-syntax-highlighting
 
 # Load the theme.
+# ########## THEME
 antigen theme agnoster
 # antigen theme bhilburn/powerlevel9k powerlevel9k
 
 # Tell Antigen that you're done.
 antigen apply
+
+############################# END OF ANTIGEN #########################
+
+# =============================================================================
+#                                   Options
+# =============================================================================
+
+# improved less option
+export LESS="--tabs=4 --no-init --LONG-PROMPT --ignore-case --quit-if-one-screen --RAW-CONTROL-CHARS"
+
+# Watching other users
+WATCHFMT="%n %a %l from %m at %t."
+#watch=(notme)         # Report login/logout events for everybody except ourself.
+LOGCHECK=60           # Time (seconds) between checks for login/logout activity.
+REPORTTIME=5          # Display usage statistics for commands running > 5 sec.
+#WORDCHARS="\"*?_-.[]~=/&;!#$%^(){}<>\""
+WORDCHARS="\"*?_-[]~&;!#$%^(){}<>\""
+
+# History
+HISTFILE=~/.zsh_history
+HISTSIZE=100000
+SAVEHIST=100000
+setopt autocd                   # Allow changing directories without `cd`
+setopt append_history           # Don;t overwrite history
+setopt extended_history         # Also record time and duration of commands.
+setopt share_history            # Share history between multiple shells
+setopt hist_expire_dups_first   # Clear duplicates when trimming internal hist.
+setopt hist_find_no_dups        # Don"t display duplicates during searches.
+setopt hist_ignore_dups         # Ignore consecutive duplicates.
+setopt hist_ignore_all_dups     # Remember only one unique copy of the command.
+setopt hist_reduce_blanks       # Remove superfluous blanks.
+setopt hist_save_no_dups        # Omit older commands in favor of newer ones.
+
+setopt extended_glob
+
+#####################################################################
+
+#################################### CUSTOM #################################
 
 # functions
 source ~/.functions
@@ -85,3 +123,4 @@ export EDITOR=subl
 # export SPARK_HOME=/Users/amir/Z/Work/2014-XSeer/Code/Misc/spark-2.2.0-bin-hadoop2.7
 # test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 eval $(thefuck --alias)
+

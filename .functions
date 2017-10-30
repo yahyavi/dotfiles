@@ -234,3 +234,12 @@ function getcertnames() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+intersect() {
+  local sort="sort -S 1G"
+  case $# in
+    (0) true;;
+    (2) $sort -u "$1"; $sort -u "$2";;
+    (*) $sort -u "$1"; shift; intersection "$@";;
+  esac | $sort | uniq -d
+}

@@ -1,3 +1,9 @@
+# if [[ -v ZSH_PROF ]]; then
+#   zmodload zsh/zprof
+# fi
+# env ZSH_PROF= zsh -ic zprof
+# repeat 5 {time zsh -i -c exit}
+
 source /usr/local/share/antigen/antigen.zsh
 ANTIGEN_CACHE=false
 
@@ -103,8 +109,8 @@ WORDCHARS="\"*?_-[]~&;!#$%^(){}<>\""
 
 # History
 HISTFILE=~/.zsh_history
-HISTSIZE=100000
-SAVEHIST=100000
+HISTSIZE=10000
+SAVEHIST=10000
 setopt autocd                   # Allow changing directories without `cd`
 setopt append_history           # Don;t overwrite history
 setopt extended_history         # Also record time and duration of commands.

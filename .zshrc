@@ -65,7 +65,7 @@ antigen bundle sbt
 antigen bundle vagrant
 antigen bundle postgres
 antigen bundle docker
-antigen bundle sudo
+# antigen bundle sudo
 antigen bundle tmux
 
 # Syntax highlighting bundle.

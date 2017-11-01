@@ -1,15 +1,17 @@
 source /usr/local/share/antigen/antigen.zsh
+ANTIGEN_CACHE=false
 
 ###################################
-POWERLEVEL9K_INSTALLATION_PATH=".antigen/bundles/bhilburn/powerlevel9k"
+POWERLEVEL9K_INSTALLATION_PATH="~/.antigen/bundles/bhilburn/powerlevel9k/"
 
 POWERLEVEL9K_MODE="awesome-patched"
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status os_icon context dir dir_writable)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vcs root_indicator background_jobs command_execution_time history)
 POWERLEVEL9K_ALWAYS_SHOW_CONTEXT=true
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=1
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_PRECISION=3
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status os_icon context dir dir_writable)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vcs root_indicator background_jobs command_execution_time history)
+
 ###################################
 
 # Load the oh-my-zsh's library.
@@ -22,8 +24,9 @@ antigen bundle encode64
 antigen bundle colorize
 antigen bundle rsync
 antigen bundle sublime
+antigen bundle colored-man-pages
+
 antigen bundle rupa/z
-antigen bundle colored-man
 
 # System
 antigen bundle command-not-found
@@ -31,6 +34,7 @@ antigen bundle brew
 antigen bundle osx
 antigen bundle ssh-agent
 antigen bundle heroku
+
 antigen bundle unixorn/autoupdate-antigen.zshplugin
 
 # Programming

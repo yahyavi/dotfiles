@@ -120,7 +120,7 @@ setopt append_history           # Don;t overwrite history
 setopt extended_history         # Also record time and duration of commands.
 setopt share_history            # Share history between multiple shells
 setopt hist_expire_dups_first   # Clear duplicates when trimming internal hist.
-setopt hist_find_no_dups        # Don"t display duplicates during searches.
+setopt hist_find_no_dups        # Don\'t display duplicates during searches.
 setopt hist_ignore_dups         # Ignore consecutive duplicates.
 setopt hist_ignore_all_dups     # Remember only one unique copy of the command.
 setopt hist_reduce_blanks       # Remove superfluous blanks.

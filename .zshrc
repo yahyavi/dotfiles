@@ -87,6 +87,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 # Load the theme.
 # ########## THEME
 # antigen theme agnoster
+# antigen theme kphoen
 # antigen theme yahyavi/dotfiles themes/amfractal
 antigen theme bhilburn/powerlevel9k powerlevel9k
 
@@ -124,7 +125,7 @@ setopt hist_ignore_dups         # Ignore consecutive duplicates.
 setopt hist_ignore_all_dups     # Remember only one unique copy of the command.
 setopt hist_reduce_blanks       # Remove superfluous blanks.
 setopt hist_save_no_dups        # Omit older commands in favor of newer ones.
-setopt histignorealldups # Substitute commands in the prompt
+setopt histignorealldups 		# Substitute commands in the prompt
 
 setopt extended_glob
 
@@ -167,4 +168,4 @@ export EDITOR=subl
 # export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
 # export SPARK_HOME=/Users/amir/Z/Work/2014-XSeer/Code/Misc/spark-2.2.0-bin-hadoop2.7
 # test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-eval $(thefuck --alias)
+eval $(thefuck --alias oops)

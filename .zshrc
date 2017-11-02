@@ -35,11 +35,12 @@ antigen bundle colored-man-pages
 antigen bundle rupa/z
 
 # System
-antigen bundle command-not-found
+# use only in ubuntu
+# antigen bundle command-not-found
 antigen bundle brew
 antigen bundle osx
 antigen bundle ssh-agent
-antigen bundle heroku
+# antigen bundle heroku
 
 antigen bundle unixorn/autoupdate-antigen.zshplugin
 
@@ -47,28 +48,28 @@ antigen bundle unixorn/autoupdate-antigen.zshplugin
 # git
 antigen bundle git
 antigen bundle git-extra
-antigen bundle github
+# antigen bundle github
 
 # python
 antigen bundle pip
 antigen bundle python
 
 # ruby
-antigen bundle gem
-antigen bundle rvm
+# antigen bundle gem
+# antigen bundle rvm
 
 # node
-antigen bundle cake
+# antigen bundle cake
 antigen bundle node
 antigen bundle npm
-antigen bundle coffee
+# antigen bundle coffee
 
 # scala
 antigen bundle scala
 antigen bundle sbt
 
 # misc
-antigen bundle vagrant
+# antigen bundle vagrant
 antigen bundle postgres
 antigen bundle docker
 # antigen bundle sudo
@@ -157,6 +158,7 @@ alias flush="dscacheutil -flushcache" # Flush DNS cache
 alias gzip="gzip -9n" # set strongest compression level as ‘default’ for gzip
 alias ping="ping -c 5" # ping 5 times ‘by default’
 alias ql="qlmanage -p 2>/dev/null" # preview a file using QuickLook
+alias less="less -R"
 
 export EDITOR=subl
 # export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH

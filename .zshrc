@@ -4,8 +4,10 @@
 # env ZSH_PROF= zsh -ic zprof
 # repeat 5 {time zsh -i -c exit}
 
+# good reference
+
 source /usr/local/share/antigen/antigen.zsh
-# ANTIGEN_CACHE=false
+ANTIGEN_CACHE=false
 
 ###################################
 POWERLEVEL9K_INSTALLATION_PATH="~/.antigen/bundles/bhilburn/powerlevel9k/"
@@ -37,7 +39,7 @@ antigen bundle rupa/z
 # System
 # use only in ubuntu
 # antigen bundle command-not-found
-antigen bundle brew
+# antigen bundle brew
 antigen bundle osx
 antigen bundle ssh-agent
 # antigen bundle heroku
@@ -122,6 +124,7 @@ setopt hist_ignore_dups         # Ignore consecutive duplicates.
 setopt hist_ignore_all_dups     # Remember only one unique copy of the command.
 setopt hist_reduce_blanks       # Remove superfluous blanks.
 setopt hist_save_no_dups        # Omit older commands in favor of newer ones.
+setopt histignorealldups # Substitute commands in the prompt
 
 setopt extended_glob
 

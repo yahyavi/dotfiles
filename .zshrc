@@ -5,7 +5,7 @@
 # repeat 5 {time zsh -i -c exit}
 
 source /usr/local/share/antigen/antigen.zsh
-ANTIGEN_CACHE=false
+# ANTIGEN_CACHE=false
 
 ###################################
 POWERLEVEL9K_INSTALLATION_PATH="~/.antigen/bundles/bhilburn/powerlevel9k/"

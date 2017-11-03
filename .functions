@@ -1,5 +1,12 @@
 #!/usr/bin/env zsh
 
+# brewup
+function brewup() {
+	brew up
+	brew upgrade
+	brew cask outdated | xargs brew cask reinstall
+}
+
 # Create a new directory and enter it
 function mkd() {
 	mkdir -p "$@" && cd "$_";

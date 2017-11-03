@@ -44,11 +44,12 @@ filetype plugin indent on    " required
 
 
 
+" Use the Tomorrow night Dark theme
 
-" Use the Solarized Dark theme
 set background=dark
 colorscheme Tomorrow-Night
 
+" Use the Solarized Dark theme
 " Solarized
 " colorscheme solarized
 " let g:solarized_termtrans=1

@@ -34,6 +34,8 @@ function get_os() {
 
 # Antigen installation
 # curl -L git.io/antigen > antigen.zsh
+# Vundle installation
+# git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 
 #############################################
@@ -56,6 +58,8 @@ POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=1
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_PRECISION=3
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status os_icon context dir dir_writable)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vcs root_indicator background_jobs ssh command_execution_time time)
+POWERLEVEL9K_TIME_FOREGROUND='green'
+POWERLEVEL9K_TIME_BACKGROUND='black'
 
 #################################
 

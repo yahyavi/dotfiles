@@ -19,13 +19,14 @@ Plugin 'tpope/vim-fugitive'
 " Git plugin not hosted on GitHub
 Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
-Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
+
+Plugin 'chriskempson/base16-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -47,7 +48,10 @@ filetype plugin indent on    " required
 " Use the Tomorrow night Dark theme
 
 set background=dark
+" let base16colorspace=256  " Access colors present in 256 colorspace
+" colorscheme base16-default-dark
 colorscheme Tomorrow-Night
+
 
 " Use the Solarized Dark theme
 " Solarized

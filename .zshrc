@@ -5,9 +5,46 @@
 # repeat 5 {time zsh -i -c exit}
 
 # good reference
+# https://github.com/jleclanche/dotfiles
+###################################
+# Basic Functions:
 
-source /usr/local/share/antigen/antigen.zsh
-ANTIGEN_CACHE=false
+# OS detection
+function is_macos() {
+  [[ "$OSTYPE" =~ ^darwin ]] || return 1
+}
+
+function is_ubuntu() {
+  [[ "$(cat /etc/issue 2> /dev/null)" =~ Ubuntu ]] || return 1
+}
+
+function is_ubuntu_desktop() {
+  dpkg -l ubuntu-desktop >/dev/null 2>&1 || return 1
+}
+
+function is_linux() {
+  [[ `uname` == 'Linux' ]] || return 1
+}
+
+function get_os() {
+  for os in macos ubuntu ubuntu_desktop; do
+    is_$os; [[ $? == ${1:-0} ]] && echo $os
+  done
+}
+
+# Antigen installation
+# curl -L git.io/antigen > antigen.zsh
+
+
+#############################################
+
+if is_macos ; then
+	source /usr/local/share/antigen/antigen.zsh
+else
+	source ~/.antigen/antigen.zsh
+fi
+
+# ANTIGEN_CACHE=false
 
 ###################################
 POWERLEVEL9K_INSTALLATION_PATH="~/.antigen/bundles/bhilburn/powerlevel9k/"
@@ -18,10 +55,25 @@ POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=1
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_PRECISION=3
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status os_icon context dir dir_writable)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vcs root_indicator background_jobs command_execution_time history)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vcs root_indicator background_jobs ssh command_execution_time time)
 
-###################################
+#################################
 
+function antigen_load_macos_specific() {
+	antigen bundle osx
+	antigen bundle sublime
+	# antigen bundle brew # deprecated, part of brew now
+	antigen bundle unixorn/autoupdate-antigen.zshplugin
+
+	export EDITOR=subl
+
+}
+
+function antigen_load_ubuntu_specific() {
+	antigen bundle command-not-found
+}
+
+##################################
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
 
@@ -31,25 +83,17 @@ antigen bundle web-search
 antigen bundle encode64
 antigen bundle colorize
 antigen bundle rsync
-antigen bundle sublime
 antigen bundle colored-man-pages
-
 antigen bundle rupa/z
 
 # System
-# use only in ubuntu
-# antigen bundle command-not-found
-# antigen bundle brew
-antigen bundle osx
 antigen bundle ssh-agent
 # antigen bundle heroku
-
-antigen bundle unixorn/autoupdate-antigen.zshplugin
 
 # Programming
 # git
 antigen bundle git
-antigen bundle git-extra
+# antigen bundle git-extra
 # antigen bundle github
 
 # python
@@ -76,6 +120,12 @@ antigen bundle postgres
 antigen bundle docker
 # antigen bundle sudo
 antigen bundle tmux
+
+if is_macos; then
+	antigen_load_macos_specific
+else
+	antigen_load_ubuntu_specific
+fi
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-autosuggestions
@@ -164,7 +214,6 @@ alias ping="ping -c 5" # ping 5 times ‘by default’
 alias ql="qlmanage -p 2>/dev/null" # preview a file using QuickLook
 alias less="less -R"
 
-export EDITOR=subl
 # export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
 # export SPARK_HOME=/Users/amir/Z/Work/2014-XSeer/Code/Misc/spark-2.2.0-bin-hadoop2.7
 # test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

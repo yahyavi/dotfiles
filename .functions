@@ -5,6 +5,8 @@ function brewup() {
 	brew up
 	brew upgrade
 	brew cask outdated | xargs brew cask reinstall
+	brew cleanup
+	brew cask cleanup
 }
 
 # Create a new directory and enter it

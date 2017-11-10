@@ -9,6 +9,8 @@
 ###################################
 # Basic Functions:
 
+export TERM="xterm-256color"
+
 # OS detection
 function is_macos() {
   [[ "$OSTYPE" =~ ^darwin ]] || return 1

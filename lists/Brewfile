@@ -15,6 +15,7 @@ tap "bramstein/webfonttools"
 tap "beeftornado/rmtree"
 cask "osxfuse"
 cask "xquartz"
+cask "caskroom/versions/java8"
 brew "ack"
 brew "gettext"
 brew "libffi"
@@ -62,6 +63,7 @@ brew "dirmngr"
 brew "dns2tcp"
 brew "dos2unix"
 brew "doxygen"
+brew "exa"
 brew "fcrackzip"
 brew "lame"
 brew "x264"
@@ -71,6 +73,7 @@ brew "findutils"
 brew "flatbuffers"
 brew "foremost"
 brew "fribidi"
+brew "fzf"
 brew "git-lfs"
 brew "gnumeric"
 brew "libusb"
@@ -259,7 +262,6 @@ cask "caskroom/fonts/font-noto-mono-for-powerline"
 cask "caskroom/fonts/font-roboto-mono-for-powerline"
 cask "caskroom/fonts/font-source-code-pro-for-powerline"
 cask "caskroom/fonts/font-ubuntu-mono-derivative-powerline"
-cask "caskroom/versions/java8"
 mas "Alinof Timer", id: 512464723
 mas "Amphetamine", id: 937984704
 mas "Binaural", id: 946812450
@@ -283,6 +285,7 @@ mas "PopClip", id: 445189367
 mas "ScannerApp", id: 912659472
 mas "Serenity", id: 1185371817
 mas "SSH Tunnel", id: 734418810
+mas "Telegram", id: 747648890
 mas "Unsplash Wallpapers", id: 1284863847
 mas "Workspaces", id: 1219826448
 mas "Xcode", id: 497799835

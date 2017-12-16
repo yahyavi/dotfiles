@@ -21,6 +21,7 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'leafgarland/typescript-vim'
 " cd ~/.vim/bundle/YouCompleteMe
 " ./install.py --clang-completer
 Plugin 'Valloric/YouCompleteMe'

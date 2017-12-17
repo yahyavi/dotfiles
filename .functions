@@ -4,7 +4,7 @@
 function brewup() {
 	brew up
 	brew upgrade
-	brew cask outdated | xargs brew cask reinstall
+	brew cask upgrade
 	brew cleanup
 	brew cask cleanup
 }

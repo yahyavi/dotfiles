@@ -7,7 +7,6 @@ tap "homebrew/core"
 tap "homebrew/php"
 tap "homebrew/versions"
 tap "homebrew/bundle"
-tap "d12frosted/emacs-plus"
 tap "caskroom/fonts"
 tap "caskroom/versions"
 tap "caskroom/cask"
@@ -65,6 +64,8 @@ brew "dirmngr"
 brew "dns2tcp"
 brew "dos2unix"
 brew "doxygen"
+brew "libtool"
+brew "emacs-plus"
 brew "exa"
 brew "fcrackzip"
 brew "lame"
@@ -85,11 +86,8 @@ brew "gnupg"
 brew "gpg-agent"
 brew "grep"
 brew "hashpump"
-brew "lua"
-brew "htop"
 brew "httpie"
 brew "hydra"
-brew "libtool"
 brew "imagemagick", args: ["with-webp"]
 brew "jasper"
 brew "john"
@@ -105,6 +103,7 @@ brew "lynx"
 brew "m-cli"
 brew "mackup"
 brew "mas"
+brew "matplotlib"
 brew "maven"
 brew "moreutils"
 brew "mpv"
@@ -147,6 +146,7 @@ brew "vim", args: ["with-override-system-vi"]
 brew "watch"
 brew "webkit2png"
 brew "wget"
+brew "yarn"
 brew "zopfli"
 brew "zsh"
 brew "zsh-completions"
@@ -154,9 +154,7 @@ brew "zsh-syntax-highlighting"
 brew "bramstein/webfonttools/sfnt2woff"
 brew "bramstein/webfonttools/sfnt2woff-zopfli"
 brew "bramstein/webfonttools/woff2"
-brew "d12frosted/emacs-plus/emacs-plus"
 brew "eddieantonio/eddieantonio/imgcat"
-brew "homebrew/science/matplotlib"
 cask "4k-video-downloader"
 cask "aerial"
 cask "airflow"
@@ -167,7 +165,6 @@ cask "appcleaner"
 cask "bartender"
 cask "bettertouchtool"
 cask "betterzip"
-cask "betterzipql"
 cask "boostnote"
 cask "cakebrew"
 cask "caption"
@@ -187,7 +184,6 @@ cask "etrecheck"
 cask "filezilla"
 cask "firefox"
 cask "fluor"
-cask "fontbase"
 cask "forklift"
 cask "gdal-framework"
 cask "gfxcardstatus"
@@ -233,6 +229,7 @@ cask "quicklook-csv"
 cask "quicklook-json"
 cask "quicklookase"
 cask "rcdefaultapp"
+cask "rocket"
 cask "sip"
 cask "skype"
 cask "slack"
@@ -298,6 +295,7 @@ cask "caskroom/fonts/font-ubuntu-mono-derivative-powerline"
 mas "Alinof Timer", id: 512464723
 mas "Amphetamine", id: 937984704
 mas "Binaural", id: 946812450
+mas "Black Out", id: 1319884285
 mas "Blinky", id: 550873221
 mas "CHM Reader", id: 424182884
 mas "Deliveries", id: 924726344
@@ -305,6 +303,7 @@ mas "Display Menu", id: 549083868
 mas "DrCleaner", id: 921458519
 mas "DrUnarchiver", id: 1127253508
 mas "EasyFind", id: 411673888
+mas "Expressions", id: 913158085
 mas "GarageBand", id: 682658836
 mas "GIF Brewery 3", id: 1081413713
 mas "GIPHY CAPTURE", id: 668208984
@@ -314,6 +313,7 @@ mas "Keynote", id: 409183694
 mas "Magnet", id: 441258766
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "PCalc", id: 403504866
 mas "Pixelmator", id: 407963104
 mas "PopClip", id: 445189367
 mas "ScannerApp", id: 912659472
@@ -324,3 +324,4 @@ mas "Unsplash Wallpapers", id: 1284863847
 mas "Workspaces", id: 1219826448
 mas "Xcode", id: 497799835
 mas "Yummy FTP", id: 492068728
+mas "Zonerly", id: 1304170322

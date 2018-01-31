@@ -20,7 +20,6 @@ brew "gettext"
 brew "libffi"
 brew "pixman"
 brew "cairo"
-brew "git"
 brew "gobject-introspection"
 brew "sqlite"
 brew "xz"
@@ -77,6 +76,7 @@ brew "foremost"
 brew "fortune"
 brew "fribidi"
 brew "fzf"
+brew "git"
 brew "git-lfs"
 brew "gnumeric"
 brew "libusb"
@@ -184,12 +184,12 @@ cask "etrecheck"
 cask "filezilla"
 cask "firefox"
 cask "fluor"
+cask "fork"
 cask "forklift"
 cask "gdal-framework"
 cask "gfxcardstatus"
 cask "gimp"
 cask "gitkraken"
-cask "gitup"
 cask "google-backup-and-sync"
 cask "google-chrome"
 cask "handbrake"
@@ -211,6 +211,7 @@ cask "little-snitch"
 cask "lockdown"
 cask "macdown"
 cask "mactex"
+cask "mactracker"
 cask "mono-mdk"
 cask "mounty"
 cask "musicbrainz-picard"
@@ -251,6 +252,7 @@ cask "tunnelblick"
 cask "veracrypt"
 cask "virtualbox"
 cask "visual-studio-code"
+cask "vivaldi"
 cask "vlc"
 cask "vox"
 cask "webpquicklook"
@@ -311,6 +313,7 @@ mas "GIF Brewery 3", id: 1081413713
 mas "GIPHY CAPTURE", id: 668208984
 mas "Helium", id: 1054607607
 mas "iMovie", id: 408981434
+mas "Jayson", id: 1189824719
 mas "Keynote", id: 409183694
 mas "Magnet", id: 441258766
 mas "Numbers", id: 409203825
@@ -318,6 +321,7 @@ mas "Pages", id: 409201541
 mas "PCalc", id: 403504866
 mas "Pixelmator", id: 407963104
 mas "PopClip", id: 445189367
+mas "RetroClip", id: 1332064978
 mas "ScannerApp", id: 912659472
 mas "Serenity", id: 1185371817
 mas "SSH Tunnel", id: 734418810

@@ -168,6 +168,9 @@ map Q gq
 " do not history when leavy buffer
 set hidden
 
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
+
 " FIXME: (broken) ctrl s to save
 noremap  <C-S> :update<CR>
 vnoremap <C-S> <C-C>:update<CR>

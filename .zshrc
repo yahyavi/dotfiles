@@ -224,4 +224,4 @@ export PATH="/usr/local/sbin:/usr/local/opt/python/libexec/bin:$PATH"
 # export SPARK_HOME=/Users/amir/Z/Work/2014-XSeer/Code/Misc/spark-2.2.0-bin-hadoop2.7
 # test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-eval $(thefuck --alias oops)
+eval $(thefuck --alias)

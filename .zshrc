@@ -46,6 +46,7 @@ if is_macos ; then
 	source /usr/local/share/antigen/antigen.zsh
 else
 	source ~/.antigen/antigen.zsh
+	export PATH="/snap/bin:$PATH"
 fi
 
 # ANTIGEN_CACHE=false

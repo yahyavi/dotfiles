@@ -91,7 +91,9 @@ antigen bundle encode64
 antigen bundle colorize
 antigen bundle rsync
 antigen bundle colored-man-pages
+antigen bundle thefuck
 antigen bundle rupa/z
+
 
 # System
 antigen bundle ssh-agent
@@ -100,6 +102,7 @@ antigen bundle ssh-agent
 # Programming
 # git
 antigen bundle git
+antigen bundle git-flow
 # antigen bundle git-extra
 # antigen bundle github
 
@@ -115,7 +118,7 @@ antigen bundle python
 # antigen bundle cake
 antigen bundle node
 antigen bundle npm
-# antigen bundle coffee
+antigen bundle yarn
 
 # scala
 antigen bundle scala

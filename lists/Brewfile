@@ -168,7 +168,6 @@ cask "calibre"
 cask "caption"
 cask "cheatsheet"
 cask "chronosync"
-cask "cloudmounter"
 cask "commander-one"
 cask "cryptomator"
 cask "cyberduck"
@@ -205,7 +204,6 @@ cask "font-liberationmono-nerd-font-mono"
 cask "font-menlo-for-powerline"
 cask "font-meslo-for-powerline"
 cask "font-meslo-lg"
-cask "font-monofur-for-powerline"
 cask "font-nixie-one"
 cask "font-noto-mono-for-powerline"
 cask "font-noto-sans-phags-pa"
@@ -313,6 +311,7 @@ cask "xquartz"
 mas "Amphetamine", id: 937984704
 mas "Anesidora", id: 1369500258
 mas "Binaural", id: 946812450
+mas "Bitwarden", id: 1352778147
 mas "Black Out", id: 1319884285
 mas "Blinky", id: 550873221
 mas "CHM Reader", id: 424182884
@@ -323,10 +322,12 @@ mas "Display Menu", id: 549083868
 mas "Download Shuttle", id: 847809913
 mas "EasyFind", id: 411673888
 mas "Evernote", id: 406056744
+mas "exifpurge", id: 784466108
 mas "Expressions", id: 913158085
 mas "GarageBand", id: 682658836
 mas "GIF Brewery 3", id: 1081413713
 mas "GIPHY CAPTURE", id: 668208984
+mas "Glance", id: 1513574319
 mas "Helium", id: 1054607607
 mas "iMovie", id: 408981434
 mas "Jayson", id: 1189824719
@@ -335,7 +336,7 @@ mas "Magnet", id: 441258766
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "PCalc", id: 403504866
-mas "Pixelmator", id: 407963104
+mas "Pixelmator Pro", id: 1289583905
 mas "PopClip", id: 445189367
 mas "Reeder", id: 880001334
 mas "RetroClip", id: 1332064978

@@ -4,7 +4,6 @@
 function brewup() {
 	brew up
 	brew upgrade
-	brew cask upgrade
 	brew cleanup
 }
 

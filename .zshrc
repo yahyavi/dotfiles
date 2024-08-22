@@ -4,12 +4,12 @@
 # env ZSH_PROF= zsh -ic zprof
 # repeat 5 {time zsh -i -c exit}
 
+# zmodload zsh/zprof # top of your .zshrc file
+
 # good reference
 # https://github.com/jleclanche/dotfiles
 ###################################
 # Basic Functions:
-
-export TERM="xterm-256color"
 
 # OS detection
 function is_macos() {
@@ -43,7 +43,7 @@ function get_os() {
 #############################################
 
 if is_macos ; then
-	source /usr/local/share/antigen/antigen.zsh
+	source /opt/homebrew/share/antigen/antigen.zsh
 else
 	source ~/.antigen/antigen.zsh
 	export PATH="/snap/bin:$PATH"
@@ -59,8 +59,9 @@ POWERLEVEL9K_ALWAYS_SHOW_CONTEXT=true
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=1
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_PRECISION=3
+POWERLEVEL9K_CUSTOM_KUBE_PS1='kube_ps1'
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status os_icon context dir dir_writable)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(root_indicator background_jobs command_execution_time vcs ssh time)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(custom_kube_ps1 root_indicator background_jobs command_execution_time vcs ssh time)
 POWERLEVEL9K_TIME_FOREGROUND='green'
 POWERLEVEL9K_TIME_BACKGROUND='black'
 
@@ -103,6 +104,7 @@ antigen bundle ssh-agent
 # git
 antigen bundle git
 antigen bundle git-flow
+antigen bundle paulirish/git-open
 # antigen bundle git-extra
 # antigen bundle github
 
@@ -119,6 +121,8 @@ antigen bundle python
 antigen bundle node
 antigen bundle npm
 antigen bundle yarn
+export NVM_COMPLETION=true
+antigen bundle lukechilds/zsh-nvm
 
 # scala
 antigen bundle scala
@@ -128,6 +132,14 @@ antigen bundle sbt
 # antigen bundle vagrant
 antigen bundle postgres
 antigen bundle docker
+
+# k8s
+antigen bundle kube-ps1
+# antigen bundle unixorn/kubectx-zshplugin
+antigen bundle dbz/kube-aliases
+antigen bundle droctothorpe/kubecolor.git
+antigen bundle jonmosco/kube-ps1
+
 # antigen bundle sudo
 antigen bundle tmux
 
@@ -142,7 +154,7 @@ antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-history-substring-search
 # antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle zdharma/fast-syntax-highlighting
+antigen bundle zdharma-continuum/fast-syntax-highlighting
 
 # Load the theme.
 # ########## THEME
@@ -154,6 +166,7 @@ antigen theme bhilburn/powerlevel9k powerlevel9k
 # Tell Antigen that you're done.
 antigen apply
 
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=244'
 ############################# END OF ANTIGEN #########################
 
 # =============================================================================
@@ -213,6 +226,22 @@ bindkey "^F" history-incremental-pattern-search-forward
 
 # functions
 source ~/.functions
+source ~/.extra
+
+
+
+### Fix slowness of pastes with zsh-syntax-highlighting.zsh
+pasteinit() {
+  OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
+  zle -N self-insert url-quote-magic # I wonder if you'd need `.url-quote-magic`?
+}
+
+pastefinish() {
+  zle -N self-insert $OLD_SELF_INSERT
+}
+zstyle :bracketed-paste-magic paste-init pasteinit
+zstyle :bracketed-paste-magic paste-finish pastefinish
+### Fix slowness of pastes
 
 # Aliases
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
@@ -224,8 +253,28 @@ alias ping="ping -c 5" # ping 5 times ‘by default’
 alias ql="qlmanage -p 2>/dev/null" # preview a file using QuickLook
 alias less="less -R"
 
-export PATH="/usr/local/sbin:/usr/local/opt/python/libexec/bin:$PATH"
+
 # export SPARK_HOME=/Users/amir/Z/Work/2014-XSeer/Code/Misc/spark-2.2.0-bin-hadoop2.7
 # test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval $(thefuck --alias)
+
+# gcloud
+source /opt/homebrew/share/google-cloud-sdk/completion.zsh.inc
+source /opt/homebrew/share/google-cloud-sdk/path.zsh.inc
+
+# aws
+source /opt/homebrew/share/zsh/site-functions/aws_zsh_completer.sh
+
+# exports
+source ~/.exports
+
+
+# kube_ps enable/disable
+kubeoff -g
+# kubeon -g
+
+
+eval "$(jenv init -)"
+
+# zprof

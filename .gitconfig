@@ -84,7 +84,7 @@
 [core]
 
 	# Use custom `.gitignore` and `.gitattributes`
-	excludesfile = /Users/amir/.gitignore
+	excludesfile = /Users/amir/.gitignore_global
 	attributesfile = ~/.gitattributes
 
 	# Treat spaces before tabs and all kinds of trailing whitespace as an error
@@ -127,6 +127,7 @@
 	untracked = cyan
 
 [commit]
+	template = /Users/amir/.stCommitMsg
 
 	# https://help.github.com/articles/signing-commits-using-gpg/
 # gpgsign = true
@@ -197,3 +198,7 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[pull]
+	ff = only
+[credential]
+	helper = osxkeychain

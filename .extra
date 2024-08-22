@@ -4,6 +4,7 @@ git config --global github.user yahyavi && \
 git config --global core.editor "subl -w" && \
 git config --global color.ui true && \
 git config --global push.default simple
+git config --global pull.ff only
 
 # Get readable list of network IPs
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
@@ -13,3 +14,5 @@ alias flush="dscacheutil -flushcache" # Flush DNS cache
 alias gzip="gzip -9n" # set strongest compression level as ‘default’ for gzip
 alias ping="ping -c 5" # ping 5 times ‘by default’
 alias ql="qlmanage -p 2>/dev/null" # preview a file using QuickLook
+
+source ~/.venv/bin/activate	

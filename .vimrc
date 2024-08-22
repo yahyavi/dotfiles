@@ -24,7 +24,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'leafgarland/typescript-vim'
 " cd ~/.vim/bundle/YouCompleteMe
 " ./install.py --clang-completer
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 Plugin 'davidhalter/jedi-vim'
 
 Plugin 'flazz/vim-colorschemes'

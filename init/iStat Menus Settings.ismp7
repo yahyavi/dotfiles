@@ -123,6 +123,10 @@
 		<integer>0</integer>
 		<key>Profiles.Settings.default.Weather.Menubar.Enabled</key>
 		<integer>0</integer>
+		<key>Sensors.Global.Degrees.Format</key>
+		<integer>1</integer>
+		<key>Sensors.Global.DetailLevel</key>
+		<integer>0</integer>
 		<key>Status.Build.Last</key>
 		<real>2221</real>
 		<key>Status.Version.Last</key>

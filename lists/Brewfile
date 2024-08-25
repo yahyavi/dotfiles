@@ -202,6 +202,7 @@ cask "cyberduck"
 cask "dbeaver-community"
 cask "dbvisualizer"
 cask "drawio"
+cask "dropbox"
 cask "fluor"
 cask "font-anonymous-pro"
 cask "font-awesome-terminal-fonts"
@@ -310,6 +311,7 @@ mas "AdGuard for Safari", id: 1440147259
 mas "Amphetamine", id: 937984704
 mas "Bitwarden", id: 1352778147
 mas "Core Tunnel", id: 1354318707
+mas "Disk Space Analyzer", id: 446243721
 mas "GarageBand", id: 682658836
 mas "Gifski", id: 1351639930
 mas "GIPHY CAPTURE", id: 668208984
@@ -320,7 +322,9 @@ mas "Magnet", id: 441258766
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "PopClip", id: 445189367
+mas "Telegram", id: 747648890
 mas "Xnip", id: 1221250572
+mas "‎WhatsApp", id: 310633997
 vscode "adpyke.vscode-sql-formatter"
 vscode "donjayamanne.githistory"
 vscode "eamodio.gitlens"

@@ -5,6 +5,35 @@ plug "zap-zsh/supercharge"
 plug "zap-zsh/zap-prompt"
 plug "zsh-users/zsh-syntax-highlighting"
 plug "romkatv/powerlevel10k"
+plug osx
+plug sublime
+plug command-not-found
+plug oh-my-zsh
+plug web-search
+plug encode64
+plug colorize
+plug rsync
+plug colored-man-pages
+plug thefuck
+plug rupa/z
+plug ssh-agent
+plug git
+plug git-flow
+plug paulirish/git-open
+plug pip
+plug python
+plug node
+plug npm
+plug yarn
+plug lukechilds/zsh-nvm
+plug scala
+plug sbt
+plug postgres
+plug _docker
+plug kube-ps1
+plug dbz/kube-aliases
+plug zsh-kubecolor
+plug tmux
 
 ###################################
 POWERLEVEL9K_INSTALLATION_PATH="~/.antidote/bundles/bhilburn/powerlevel9k/"

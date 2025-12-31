@@ -1,58 +1,13 @@
-# if [[ -v ZSH_PROF ]]; then
-#   zmodload zsh/zprof
-# fi
-# env ZSH_PROF= zsh -ic zprof
-# repeat 5 {time zsh -i -c exit}
-
-# zmodload zsh/zprof # top of your .zshrc file
-
-# good reference
-# https://github.com/jleclanche/dotfiles
-###################################
-# Basic Functions:
-
-# OS detection
-function is_macos() {
-  [[ "$OSTYPE" =~ ^darwin ]] || return 1
-}
-
-function is_ubuntu() {
-  [[ "$(cat /etc/issue 2> /dev/null)" =~ Ubuntu ]] || return 1
-}
-
-function is_ubuntu_desktop() {
-  dpkg -l ubuntu-desktop >/dev/null 2>&1 || return 1
-}
-
-function is_linux() {
-  [[ `uname` == 'Linux' ]] || return 1
-}
-
-function get_os() {
-  for os in macos ubuntu ubuntu_desktop; do
-    is_$os; [[ $? == ${1:-0} ]] && echo $os
-  done
-}
-
-# Antigen installation
-# curl -L git.io/antigen > antigen.zsh
-# Vundle installation
-# git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-
-
-#############################################
-
-if is_macos ; then
-	source /opt/homebrew/share/antigen/antigen.zsh
-else
-	source ~/.antigen/antigen.zsh
-	export PATH="/snap/bin:$PATH"
-fi
-
-# ANTIGEN_CACHE=false
+# Created by Zap installer
+[ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
+plug "zsh-users/zsh-autosuggestions"
+plug "zap-zsh/supercharge"
+plug "zap-zsh/zap-prompt"
+plug "zsh-users/zsh-syntax-highlighting"
+plug "romkatv/powerlevel10k"
 
 ###################################
-POWERLEVEL9K_INSTALLATION_PATH="~/.antigen/bundles/bhilburn/powerlevel9k/"
+POWERLEVEL9K_INSTALLATION_PATH="~/.antidote/bundles/bhilburn/powerlevel9k/"
 
 POWERLEVEL9K_MODE="awesome-patched"
 POWERLEVEL9K_ALWAYS_SHOW_CONTEXT=true
@@ -66,105 +21,6 @@ POWERLEVEL9K_TIME_FOREGROUND='green'
 POWERLEVEL9K_TIME_BACKGROUND='black'
 
 #################################
-
-function antigen_load_macos_specific() {
-	antigen bundle osx
-	antigen bundle sublime
-	# antigen bundle brew # deprecated, part of brew now
-	antigen bundle unixorn/autoupdate-antigen.zshplugin
-
-	export EDITOR=subl
-
-}
-
-function antigen_load_ubuntu_specific() {
-	antigen bundle command-not-found
-}
-
-##################################
-# Load the oh-my-zsh's library.
-antigen use oh-my-zsh
-
-# Bundles from the default repo (robbyrussell's oh-my-zsh).
-# Tools
-antigen bundle web-search
-antigen bundle encode64
-antigen bundle colorize
-antigen bundle rsync
-antigen bundle colored-man-pages
-antigen bundle thefuck
-antigen bundle rupa/z
-
-
-# System
-antigen bundle ssh-agent
-# antigen bundle heroku
-
-# Programming
-# git
-antigen bundle git
-antigen bundle git-flow
-antigen bundle paulirish/git-open
-# antigen bundle git-extra
-# antigen bundle github
-
-# python
-antigen bundle pip
-antigen bundle python
-
-# ruby
-# antigen bundle gem
-# antigen bundle rvm
-
-# node
-# antigen bundle cake
-antigen bundle node
-antigen bundle npm
-antigen bundle yarn
-export NVM_COMPLETION=true
-antigen bundle lukechilds/zsh-nvm
-
-# scala
-antigen bundle scala
-antigen bundle sbt
-
-# misc
-# antigen bundle vagrant
-antigen bundle postgres
-antigen bundle docker
-
-# k8s
-antigen bundle kube-ps1
-# antigen bundle unixorn/kubectx-zshplugin
-antigen bundle dbz/kube-aliases
-antigen bundle droctothorpe/kubecolor.git
-antigen bundle jonmosco/kube-ps1
-
-# antigen bundle sudo
-antigen bundle tmux
-
-if is_macos; then
-	antigen_load_macos_specific
-else
-	antigen_load_ubuntu_specific
-fi
-
-# Syntax highlighting bundle.
-antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle zsh-users/zsh-completions
-antigen bundle zsh-users/zsh-history-substring-search
-# antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle zdharma-continuum/fast-syntax-highlighting
-
-# Load the theme.
-# ########## THEME
-# antigen theme agnoster
-# antigen theme kphoen
-# antigen theme yahyavi/dotfiles themes/amfractal
-antigen theme bhilburn/powerlevel9k powerlevel9k
-
-# Tell Antigen that you're done.
-antigen apply
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=244'
 ############################# END OF ANTIGEN #########################
@@ -228,8 +84,6 @@ bindkey "^F" history-incremental-pattern-search-forward
 source ~/.functions
 source ~/.extra
 
-
-
 ### Fix slowness of pastes with zsh-syntax-highlighting.zsh
 pasteinit() {
   OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
@@ -253,9 +107,6 @@ alias ping="ping -c 5" # ping 5 times ‘by default’
 alias ql="qlmanage -p 2>/dev/null" # preview a file using QuickLook
 alias less="less -R"
 
-
-# export SPARK_HOME=/Users/amir/Z/Work/2014-XSeer/Code/Misc/spark-2.2.0-bin-hadoop2.7
-# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval $(thefuck --alias)
 
@@ -271,10 +122,13 @@ source ~/.exports
 
 
 # kube_ps enable/disable
-kubeoff -g
+# kubeoff -g
 # kubeon -g
 
 
 eval "$(jenv init -)"
 
-# zprof
+
+# Load and initialise completion system
+autoload -Uz compinit
+compinit

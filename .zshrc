@@ -8,7 +8,7 @@ plug "romkatv/powerlevel10k"
 plug osx
 plug sublime
 plug command-not-found
-plug oh-my-zsh
+# plug oh-my-zsh
 plug web-search
 plug encode64
 plug colorize
@@ -34,6 +34,9 @@ plug kube-ps1
 plug dbz/kube-aliases
 plug zsh-kubecolor
 plug tmux
+plug unixorn/fzf-zsh-plugin
+plug joshskidmore/zsh-fzf-history-search
+# plug b4b4r07/enhancd
 
 ###################################
 POWERLEVEL9K_INSTALLATION_PATH="~/.antidote/bundles/bhilburn/powerlevel9k/"
@@ -136,7 +139,7 @@ alias ping="ping -c 5" # ping 5 times ‘by default’
 alias ql="qlmanage -p 2>/dev/null" # preview a file using QuickLook
 alias less="less -R"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# [ -f ~/..zsh ] && source ~/.fzf.zsh
 eval $(thefuck --alias)
 
 # gcloud
@@ -149,14 +152,11 @@ source /opt/homebrew/share/zsh/site-functions/aws_zsh_completer.sh
 # exports
 source ~/.exports
 
-
 # kube_ps enable/disable
 # kubeoff -g
 # kubeon -g
 
-
 eval "$(jenv init -)"
-
 
 # Load and initialise completion system
 autoload -Uz compinit
